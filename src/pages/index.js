@@ -1,14 +1,14 @@
 import React, { useState } from "react"
 
-import LandingPage from "./pages/Landing-page"
-import AboutMe from "./pages/About-me"
-import Resume from "./pages/Resume"
-import Portfolio from "./pages/Portfolio"
-import Nav from "./pages/Nav"
-// import SEO from "../components/SEO"
+import LandingPage from "./Landing-page"
+import AboutMe from "./About-me"
+import Resume from "./Resume"
+import Portfolio from "./Portfolio"
+import Nav from "./Nav"
+import SEO from "../components/SEO"
 
-import "./Normalize.css"
-import "./portfolio.css"
+import "../Normalize.css"
+import "../portfolio.css"
 
 export default function Home() {
   const [open, setOpen] = useState(false)
@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <main>
       <div className="app-container">
-        {/* <SEO /> */}
+        <SEO />
         <LandingPage open={open} setOpen={setOpen} page={page} />
         <AboutMe open={open} setOpen={setOpen} page={page} />
         <Resume open={open} setOpen={setOpen} page={page} />

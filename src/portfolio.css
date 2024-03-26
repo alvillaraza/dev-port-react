@@ -1,0 +1,278 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiGyp8kv8JHgFVrLPTedw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_V1s.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7V1s.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotocondensed/v25/ieVi2ZhZI2eCN5jzbjEETS9weq8-33mZKCM.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotocondensed/v25/ieVl2ZhZI2eCN5jzbjEETS9weq8-59U.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotocondensed/v25/ieVi2ZhZI2eCN5jzbjEETS9weq8-32meKCM.ttf) format('truetype');
+}
+html,
+body {
+  overflow: hidden;
+  line-height: 1.44;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+main {
+  position: relative;
+}
+.faded {
+  opacity: 0.1;
+}
+.hidden {
+  opacity: 0;
+  z-index: -1;
+  transform: scale(0.98);
+}
+.app-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+.app-container > * {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  overflow-y: auto;
+  transition-property: opacity transform;
+  transition-duration: 0.5s;
+}
+.nav-container {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  transition-property: right;
+  transition-duration: 0.5s;
+}
+.nav-container.hide {
+  right: -240px;
+}
+.nav-container .button-container {
+  display: flex;
+  align-items: center;
+}
+.nav-container nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  padding: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-weight: 300;
+  font-size: 20px;
+}
+.nav-container nav li {
+  padding: 10px;
+}
+.nav-container nav li button {
+  color: white;
+}
+.landing-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+.landing-page-container .links img {
+  max-width: 32px;
+  justify-content: flex-start;
+}
+.landing-page-container .links a {
+  display: inline-block;
+  padding: 5px;
+}
+.landing-page-container .name-title {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+}
+.landing-page-container .name-title h1 {
+  font-weight: 100;
+  font-size: 8vw;
+  line-height: 0;
+}
+.landing-page-container .name-title h2 {
+  font-size: 3vw;
+}
+.landing-page-container .tech-stack-icons {
+  text-align: center;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+}
+.landing-page-container .tech-stack-icons img {
+  max-width: 32px;
+  padding: 12px;
+}
+.resume-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+.resume-container h1,
+.resume-container h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.resume-container img {
+  max-width: 25px;
+}
+.resume-container .resume-basic-info {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+}
+.resume-container .resume-basic-info .tech-stack-list {
+  border-top: 5px solid black;
+  padding-top: 150px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  word-spacing: 13px;
+}
+.resume-container .resume-experience {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  padding: 5%;
+}
+.resume-container .resume-experience .experience-block {
+  padding: 20px;
+}
+.resume-container .resume-experience .experience-block h1 {
+  text-transform: uppercase;
+  margin: 0;
+}
+.resume-container .resume-experience .experience-block h2 {
+  font-size: 20px;
+  margin: 0;
+}
+.resume-container .resume-experience .experience-block .dates {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.resume-container .resume-experience .experience-block a:hover {
+  text-decoration: underline;
+}
+.resume-container .resume-experience .experience-block .description {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.resume-container .resume-experience .experience-block .description img {
+  width: 10px;
+  padding-right: 15px;
+}
+.resume-container .resume-experience .experience-block .description a {
+  text-decoration: underline;
+}
+.resume-container .resume-experience .education {
+  border-top: 5px solid black;
+  align-self: flex-end;
+}
+@media screen and (max-width: 720px) {
+  .resume-container {
+    grid-template-columns: 1fr;
+  }
+  .resume-container .tech-stack-list {
+    padding: 80px 50px;
+  }
+}
+.about-me-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+.about-me-container .about-me-text {
+  padding: 50px;
+}
+.about-me-container .about-me-story {
+  border-top: 5px solid black;
+  padding-top: 50px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+@media screen and (max-width: 720px) {
+  .about-me-container {
+    grid-template-columns: 1fr;
+  }
+}
+.contact-info {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+.contact-info h2 {
+  font-size: 50px;
+}
+.contact-info h3 {
+  font-size: 35px;
+  line-height: 0;
+}
+.contact-info h4 {
+  font-size: 20px;
+  line-height: 0;
+}
+.contact-info .links img {
+  max-width: 32px;
+}
+.contact-info .links a {
+  display: inline-block;
+  padding: 5px;
+}
