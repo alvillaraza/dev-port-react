@@ -6,6 +6,7 @@ import Resume from "./pages/Resume"
 import Portfolio from "./pages/Portfolio"
 import Nav from "./pages/Nav"
 // import SEO from "../components/SEO"
+// TODO figure out why less isn't compiling
 
 import "./Normalize.css"
 import "./portfolio.css"
