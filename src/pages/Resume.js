@@ -18,7 +18,7 @@ export default function Resume({ page }) {
       <div className="resume-experience">
         <div className="experience">
           <section className="experience-block">
-            <div className="dates">January 2023 – April 2023</div>
+            <div className="dates">January 2023 – March 2024</div>
             <h1 className="first-line">
               Full Stack Software Engineer{" "}
               <img src={remote} alt="remote logo" />
@@ -27,10 +27,16 @@ export default function Resume({ page }) {
             <p className="description">
               <ul>
                 <li>
-                  In a small startup environment, developed user flows by
-                  creating APIs in GoLang (SQL database) and translating the UI
-                  design from Figma into code using React, Typescript, and
-                  Tailwind.
+                  In a small startup environment, demonstrated ability to pivot seamlessly between multiple projects, effectively managing competing priorities and deadlines to deliver high-quality solutions.
+                </li>
+                <li>
+                  Adaptable and collaborative team member, leveraging strong communication skills to effectively coordinate with cross-functional teams and stakeholders, fostering a culture of collaboration and knowledge sharing.
+                </li>
+                <li>
+                  Translated UI designs into code using React, Typescript, and Tailwind, ensuring pixel-perfect execution.
+                </li>
+                <li>
+                  Leveraged GraphQL to implement efficient and flexible APIs for user flows in this SaaS company, using GoLang with a Postgres database, resulting in a seamless integration of backend services.
                 </li>
                 <li>
                   Created client-facing email communications with personalized

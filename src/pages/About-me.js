@@ -16,7 +16,7 @@ export default function AboutMe({ page }) {
         <Contact />
         <div className="about-me-story">
           <p>
-            Alexis is a Front End Web Developer with entrepreneurial and
+            Alexis is a Frontend-leaning Full Stack Software Engineer with entrepreneurial and
             leadership experience. Her background in management taught her to be
             a well organized and tactical planner, with a proficiency in working
             with various types of people.
@@ -30,7 +30,7 @@ export default function AboutMe({ page }) {
             managing team projects.
           </p>
           <p>
-            She worked full time as Software Engineer I at Carvana. She worked on Carvana's landing page and search page using TypeScript, React, and Jest. She recently contracted at Integrate, gaining experience in a small start-up company. She worked at Integrate as a Full Stack Developer, adding Go and Tailwind to her repertoire. She is currently looking for a full time remote position.  If
+            She worked full time as Software Engineer I at Carvana. She worked on Carvana's landing page and search page using TypeScript, React, and Jest. She recently worked at Integrate as a Full Stack Software Engineer, gaining experience in a small start-up company where she added Golang for backend, GraphQL for APIs, Tailwind for styling, and Playwright for end-to-end testing to her repertoire. She is currently looking for a full time remote position.  If
             you or someone you know is hiring a Software Engineer, you can contact her at {' '}
             <a href="mailto:alexis.borja@gmail.com">alexis.borja@gmail.com</a>.
           </p>
