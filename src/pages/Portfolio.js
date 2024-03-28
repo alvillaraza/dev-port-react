@@ -1,19 +1,13 @@
 import React from "react"
 
-import Contact from "../components/Contact"
-
 import lightning from "../assets/icon-lightning-bolt.png"
 import link from "../assets/link.svg"
-import TechStack from '../components/TechStack'
+import BasicInfo from '../components/BasicInfo'
 
 export default function Portfolio({ page }) {
   return (
-    <div className={`resume-container ${page === "portfolio" ? "" : "hidden"}`}>
-      <div className="resume-basic-info">
-        <Contact />
-       <TechStack />
-      </div>
-
+    <div className={ `resume-container ${page === "portfolio" ? "" : "hidden"}` }>
+      <BasicInfo />
       <div className="resume-experience">
         <section className="experience-block">
           <div className="dates">April 2021</div>

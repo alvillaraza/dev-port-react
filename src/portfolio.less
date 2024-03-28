@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;700&family=Roboto+Condensed:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;700&family=Roboto+Condensed:wght@300;400;700&display=swap');
 
 .heading-font() {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
 }
 
 .reading-font() {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 html,
@@ -58,9 +58,9 @@ main {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
 
-  >* {
-    grid-column: ~"1/-1";
-    grid-row: ~"1/-1";
+  > * {
+    grid-column: ~'1/-1';
+    grid-row: ~'1/-1';
     overflow-y: auto;
     transition-property: opacity transform;
     transition-duration: 0.5s;
@@ -180,7 +180,9 @@ main {
     height: 100vh;
     flex-direction: column;
     justify-content: center;
-    padding: 5%;
+    padding-inline: 5%;
+    position: sticky;
+    top: 0;
 
     .tech-stack-list {
       border-top: 5px solid black;
@@ -293,7 +295,6 @@ main {
     font-size: 20px;
     line-height: 0;
   }
-
 }
 
 .links {

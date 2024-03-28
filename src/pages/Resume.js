@@ -1,40 +1,43 @@
-import React from "react"
-
-import Contact from "../components/Contact"
-
-import remote from "../assets/logo-remote.png"
-import TechStack from '../components/TechStack'
+import React from 'react';
+import BasicInfo from '../components/BasicInfo';
+import remote from '../assets/logo-remote.png';
 
 export default function Resume({ page }) {
   return (
-    <div className={`resume-container ${page === "resume" ? "" : "hidden"}`}>
-      <div className="resume-basic-info">
-        <Contact />
-        <TechStack />
-      </div>
-
-      <div className="resume-experience">
-        <div className="experience">
-          <section className="experience-block">
-            <div className="dates">January 2023 – March 2024</div>
-            <h1 className="first-line">
-              Full Stack Software Engineer{" "}
-              <img src={remote} alt="remote logo" />
+    <div className={`resume-container ${page === 'resume' ? '' : 'hidden'}`}>
+      <BasicInfo />
+      <div className='resume-experience'>
+        <div className='experience'>
+          <section className='experience-block'>
+            <div className='dates'>January 2023 – March 2024</div>
+            <h1 className='first-line'>
+              Full Stack Software Engineer{' '}
+              <img src={remote} alt='remote logo' />
             </h1>
-            <h2 className="second-line">Integrate</h2>
-            <p className="description">
+            <h2 className='second-line'>Integrate</h2>
+            <p className='description'>
               <ul>
                 <li>
-                  In a small startup environment, demonstrated ability to pivot seamlessly between multiple projects, effectively managing competing priorities and deadlines to deliver high-quality solutions.
+                  In a small startup environment, demonstrated ability to pivot
+                  seamlessly between multiple projects, effectively managing
+                  competing priorities and deadlines to deliver high-quality
+                  solutions.
                 </li>
                 <li>
-                  Adaptable and collaborative team member, leveraging strong communication skills to effectively coordinate with cross-functional teams and stakeholders, fostering a culture of collaboration and knowledge sharing.
+                  Adaptable and collaborative team member, leveraging strong
+                  communication skills to effectively coordinate with
+                  cross-functional teams and stakeholders, fostering a culture
+                  of collaboration and knowledge sharing.
                 </li>
                 <li>
-                  Translated UI designs into code using React, Typescript, and Tailwind, ensuring pixel-perfect execution.
+                  Translated UI designs into code using React, Typescript, and
+                  Tailwind, ensuring pixel-perfect execution.
                 </li>
                 <li>
-                  Leveraged GraphQL to implement efficient and flexible APIs for user flows in this SaaS company, using GoLang with a Postgres database, resulting in a seamless integration of backend services.
+                  Leveraged GraphQL to implement efficient and flexible APIs for
+                  user flows in this SaaS company, using GoLang with a Postgres
+                  database, resulting in a seamless integration of backend
+                  services.
                 </li>
                 <li>
                   Created client-facing email communications with personalized
@@ -45,13 +48,13 @@ export default function Resume({ page }) {
               </ul>
             </p>
           </section>
-          <section className="experience-block">
-            <div className="dates">June 2021 - November 2022</div>
-            <h1 className="first-line">
-              Software Engineer I <img src={remote} alt="remote logo" />
+          <section className='experience-block'>
+            <div className='dates'>June 2021 - November 2022</div>
+            <h1 className='first-line'>
+              Software Engineer I <img src={remote} alt='remote logo' />
             </h1>
-            <h2 className="second-line">Carvana</h2>
-            <p className="description">
+            <h2 className='second-line'>Carvana</h2>
+            <p className='description'>
               <ul>
                 <li>
                   One of three software engineers who collaborated with Product
@@ -98,13 +101,13 @@ export default function Resume({ page }) {
             </p>
           </section>
 
-          <section className="experience-block">
-            <div className="dates">October 2020 – December 2020</div>
-            <h1 className="first-line">
-              Front end Developer <img src={remote} alt="remote logo" />
+          <section className='experience-block'>
+            <div className='dates'>October 2020 – December 2020</div>
+            <h1 className='first-line'>
+              Front end Developer <img src={remote} alt='remote logo' />
             </h1>
-            <h2 className="second-line">Strongmind</h2>
-            <p className="description">
+            <h2 className='second-line'>Strongmind</h2>
+            <p className='description'>
               <ul>
                 <li>
                   Updated data layer for interactive interfaces on educational
@@ -118,13 +121,13 @@ export default function Resume({ page }) {
             </p>
           </section>
 
-          <section className="experience-block">
-            <div className="dates">July 2020 – October 2020</div>
-            <h1 className="first-line">
-              Team Lead <img src={remote} alt="remote logo" />
+          <section className='experience-block'>
+            <div className='dates'>July 2020 – October 2020</div>
+            <h1 className='first-line'>
+              Team Lead <img src={remote} alt='remote logo' />
             </h1>
-            <h2 className="second-line">Lambda School</h2>
-            <p className="description">
+            <h2 className='second-line'>Lambda School</h2>
+            <p className='description'>
               <ul>
                 <li>
                   Mentored a team of 6 - 8 students to be self-sufficient when
@@ -144,11 +147,11 @@ export default function Resume({ page }) {
               </ul>
             </p>
           </section>
-          <section className="experience-block">
-            <div className="dates">June 2015 – January 2020</div>
-            <h1 className="first-line">Owner/Project Manager</h1>
-            <h2 className="second-line">BOSS Entertainment Live</h2>
-            <p className="description">
+          <section className='experience-block'>
+            <div className='dates'>June 2015 – January 2020</div>
+            <h1 className='first-line'>Owner/Project Manager</h1>
+            <h2 className='second-line'>BOSS Entertainment Live</h2>
+            <p className='description'>
               <ul>
                 <li>Hired and managed a team of +/- 20 performers</li>
                 <li>
@@ -174,14 +177,14 @@ export default function Resume({ page }) {
               </ul>
             </p>
           </section>
-          <section className="experience-block education">
-            <h1 className="first-line">
-              EDUCATION <img src={remote} alt="remote logo" />
+          <section className='experience-block education'>
+            <h1 className='first-line'>
+              EDUCATION <img src={remote} alt='remote logo' />
             </h1>
-            <div className="dates">December 2019 – June 2020</div>
-            <h2 className="second-line">Full Stack Web Development Student</h2>
-            <h2 className="second-line">Lambda School</h2>
-            <p className="description">
+            <div className='dates'>December 2019 – June 2020</div>
+            <h2 className='second-line'>Full Stack Web Development Student</h2>
+            <h2 className='second-line'>Lambda School</h2>
+            <p className='description'>
               <ul>
                 <li>
                   Learned several programming languages from the ground up in
@@ -197,14 +200,14 @@ export default function Resume({ page }) {
                 </li>
               </ul>
             </p>
-            <div className="dates">August 2005 – December 2009</div>
-            <h2 className="second-line">
+            <div className='dates'>August 2005 – December 2009</div>
+            <h2 className='second-line'>
               Global Business Leadership and Management, BS
             </h2>
-            <h2 className="second-line">Arizona State University</h2>
+            <h2 className='second-line'>Arizona State University</h2>
           </section>
         </div>
       </div>
     </div>
-  )
+  );
 }
