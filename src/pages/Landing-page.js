@@ -1,7 +1,4 @@
 import React from "react"
-
-import github from "../assets/logo-github.png"
-import linkedin from "../assets/logo-linked-in.png"
 import html from "../assets/logo-html-5.png"
 import css from "../assets/logo-css.png"
 import sass from "../assets/logo-sass.png"

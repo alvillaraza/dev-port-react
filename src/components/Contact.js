@@ -1,8 +1,4 @@
 import React from "react"
-
-import github from "../assets/logo-github.png"
-import linkedin from "../assets/logo-linked-in.png"
-import resume from "../assets/ALEXIS_VILLARAZA_resume2024.pdf"
 import Links from './Links'
 
 export default function Contact() {

@@ -3,16 +3,14 @@ import React from "react"
 import Contact from "../components/Contact"
 
 import remote from "../assets/logo-remote.png"
+import TechStack from '../components/TechStack'
 
 export default function Resume({ page }) {
   return (
     <div className={`resume-container ${page === "resume" ? "" : "hidden"}`}>
       <div className="resume-basic-info">
         <Contact />
-        <div className="tech-stack-list">
-          HTML CSS Tailwind Bootstrap JS React Redux Go Gatsby Node Python SQL
-          GIT Agile
-        </div>
+        <TechStack />
       </div>
 
       <div className="resume-experience">

@@ -4,15 +4,14 @@ import Contact from "../components/Contact"
 
 import lightning from "../assets/icon-lightning-bolt.png"
 import link from "../assets/link.svg"
+import TechStack from '../components/TechStack'
 
 export default function Portfolio({ page }) {
   return (
     <div className={`resume-container ${page === "portfolio" ? "" : "hidden"}`}>
       <div className="resume-basic-info">
         <Contact />
-        <div className="tech-stack-list">
-          HTML CSS Tailwind Bootstrap JS Typescript React Redux Go Node Python GraphQL REST SQL GIT Agile
-        </div>
+       <TechStack />
       </div>
 
       <div className="resume-experience">
