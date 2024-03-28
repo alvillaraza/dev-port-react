@@ -1,44 +1,34 @@
-import React from "react"
-import html from "../assets/logo-html-5.png"
-import css from "../assets/logo-css.png"
-import sass from "../assets/logo-sass.png"
-import less from "../assets/logo-less.png"
-import bootstrap from "../assets/logo-bootstrap.png"
-import js from "../assets/logo-js.png"
-import react from "../assets/logo-react.png"
-import redux from "../assets/logo-redux.png"
-import python from "../assets/logo-python.png"
-import gatsby from "../assets/logo-gatsby.png"
-import git from "../assets/logo-git.png"
-import Links from '../components/Links'
+import React from 'react';
+import css from '../assets/logo-css.png';
+import redux from '../assets/logo-redux.png';
+import Links from '../components/Links';
+import graphqlIcon from '../assets/graphql.svg';
 
 export default function LandingPage({ open, page }) {
   return (
-    <>
-      <div
-        className={`landing-page-container ${
-          page === "landing-page" ? "" : "hidden"
-        }`}
-      >
-        <Links />
-        <header className={`name-title ${open ? "faded" : ""}`}>
-          <h1>Alexis Villaraza</h1>
-          <h2>SOFTWARE ENGINEER</h2>
-        </header>
-        <footer className={`tech-stack-icons ${open ? "faded" : ""}`}>
-          <img src={html} alt="html icon" />
-          <img src={css} alt="css icon" />
-          <img src={sass} alt="sass icon" />
-          <img src={less} alt="less icon" />
-          <img src={bootstrap} alt="bootstrap icon" />
-          <img src={js} alt="js icon" />
-          <img src={react} alt="react icon" />
-          <img src={redux} alt="redux icon" />
-          <img src={python} alt="python icon" />
-          <img src={gatsby} alt="gatsby icon" />
-          <img src={git} alt="git icon" />
-        </footer>
-      </div>
-    </>
-  )
+    <div
+      className={`landing-page-container ${
+        page === 'landing-page' ? '' : 'hidden'
+      }`}
+    >
+      <Links />
+      <header className={`name-title ${open ? 'faded' : ''}`}>
+        <h1>Alexis Villaraza</h1>
+        <h2>SOFTWARE ENGINEER</h2>
+      </header>
+      <footer className={`tech-stack-icons ${open ? 'faded' : ''}`}>
+        <i class='fa-brands fa-html5 fa-3x'></i>
+        <img src={css} alt='css icon' />
+        <i class='fa-brands fa-sass fa-3x'></i>
+        <i class='fa-brands fa-less fa-3x'></i>
+        <i class='fa-brands fa-js fa-3x'></i>
+        <i class='fa-brands fa-react fa-3x'></i>
+        <img src={redux} alt='redux icon' />
+        <i class='fa-brands fa-python fa-3x'></i>
+        <i class='fa-brands fa-golang fa-3x'></i>
+        <img src={graphqlIcon} alt='graphql icon' />
+        <i class='fa-brands fa-git-alt fa-3x'></i>
+      </footer>
+    </div>
+  );
 }

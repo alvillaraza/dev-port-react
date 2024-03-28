@@ -151,13 +151,17 @@ main {
   font-size: 3vw;
 }
 .landing-page-container .tech-stack-icons {
-  text-align: center;
   transition-property: opacity;
   transition-duration: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
 }
 .landing-page-container .tech-stack-icons img {
-  max-width: 32px;
-  padding: 12px;
+  width: 43px;
+  height: 43px;
 }
 .resume-container {
   display: grid;

@@ -58,7 +58,7 @@ main {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
 
-  > * {
+  >* {
     grid-column: ~'1/-1';
     grid-row: ~'1/-1';
     overflow-y: auto;
@@ -148,13 +148,17 @@ main {
   }
 
   .tech-stack-icons {
-    text-align: center;
     transition-property: opacity;
     transition-duration: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
 
     img {
-      max-width: 32px;
-      padding: 12px;
+      width: 43px;
+      height: 43px;
     }
   }
 }
@@ -236,9 +240,6 @@ main {
       }
     }
 
-    // .experience {
-
-    // }
     .education {
       border-top: 5px solid black;
       align-self: flex-end;
