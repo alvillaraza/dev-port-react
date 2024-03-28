@@ -127,10 +127,6 @@ main {
   justify-content: space-between;
   height: 100vh;
 }
-.landing-page-container .links {
-  display: flex;
-  align-items: center;
-}
 .landing-page-container .links img {
   max-width: 32px;
   justify-content: flex-start;
@@ -273,10 +269,11 @@ main {
   font-size: 20px;
   line-height: 0;
 }
-.contact-info .links img {
-  max-width: 32px;
+.links {
+  display: flex;
+  align-items: center;
 }
-.contact-info .links a {
+.links a {
   display: inline-block;
   padding: 5px;
 }

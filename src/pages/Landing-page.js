@@ -13,6 +13,7 @@ import redux from "../assets/logo-redux.png"
 import python from "../assets/logo-python.png"
 import gatsby from "../assets/logo-gatsby.png"
 import git from "../assets/logo-git.png"
+import Links from '../components/Links'
 
 export default function LandingPage({ open, page }) {
   return (
@@ -22,22 +23,7 @@ export default function LandingPage({ open, page }) {
           page === "landing-page" ? "" : "hidden"
         }`}
       >
-        <div className="links">
-          <a
-            href="https://github.com/alvillaraza"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={github} alt="github icon" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/alvillaraza/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={linkedin} alt="linked in icon" />
-          </a>
-        </div>
+        <Links />
         <header className={`name-title ${open ? "faded" : ""}`}>
           <h1>Alexis Villaraza</h1>
           <h2>SOFTWARE ENGINEER</h2>
