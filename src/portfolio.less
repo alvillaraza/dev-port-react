@@ -263,17 +263,28 @@ main {
   height: 100vh;
 
   .about-me-text {
-    padding: 50px;
+    padding-inline: 40px;
   }
 
   .about-me-story {
     border-top: 5px solid black;
-    padding-top: 50px;
+    padding-top: 20px;
     .reading-font();
+
+    a {
+      text-decoration: underline;
+    }
   }
+
 
   @media screen and (max-width: 720px) {
     grid-template-columns: 1fr;
+  }
+
+  @media screen and (min-width: 1800px) {
+    .about-me-story {
+      font-size: 23px;
+    }
   }
 }
 

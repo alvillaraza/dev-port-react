@@ -247,16 +247,24 @@ main {
   height: 100vh;
 }
 .about-me-container .about-me-text {
-  padding: 50px;
+  padding-inline: 40px;
 }
 .about-me-container .about-me-story {
   border-top: 5px solid black;
-  padding-top: 50px;
+  padding-top: 20px;
   font-family: 'Roboto Condensed', sans-serif;
+}
+.about-me-container .about-me-story a {
+  text-decoration: underline;
 }
 @media screen and (max-width: 720px) {
   .about-me-container {
     grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .about-me-container .about-me-story {
+    font-size: 23px;
   }
 }
 .contact-info {
